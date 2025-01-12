@@ -1,0 +1,139 @@
+*,*::before,
+*::after{
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+  
+    height: 100vh;;
+    margin: 0 ;
+
+    flex-direction: column;
+    background-color: #425c77;
+  } 
+
+  header.navbar {
+    width: 100%;
+    padding-block: 1rem 1rem ;
+    padding-left: 2rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+    background-color: #526D82;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 9999;
+  }
+
+  header.navbar img{
+    width: 80px;
+  }
+
+  header.navbar .nav-list ul{
+      display: flex;
+      padding-right: 5rem;
+      justify-content: center;
+      left: 5px;
+      gap: 5rem 2rem;
+      list-style-type: none;
+    }
+
+      header.navbar .logo-PPLG{
+        margin-top: 1px;
+        display: flex;
+      }
+
+    header.navbar .logo-PPLG p{
+      justify-content: center;
+      margin-bottom: 1px;
+      margin-left: 30px;
+      font-size: 40px;
+      font-weight : bold;
+    }
+
+  header.navbar ul li{
+    margin: 10 50px;
+  }
+
+  header.navbar ul li a{
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    justify-content: center;
+    border-radius: 9px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+  }
+
+
+  header.navbar ul li a:hover{
+    background-color: white;
+  color: #425c77; 
+  }
+
+  #beranda{
+    float: left;
+    width: 75%;
+  }
+
+  main{
+      flex: 1;
+      width: 100%;
+      margin-inline: auto;
+      padding: 2rem 4rem;
+      display: flex;
+      align-items: center;
+  }
+
+  main.content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  main.content .gambar-content  
+  h3{color: aquamarine;}  
+
+  .gambar-content img{
+    width: 99%;
+    position: relative;
+    margin-left: 50px;
+    border-radius: 15%;
+  }
+
+  mark{
+    background-color: #425c77;
+    color: black;
+    font-size: 24px;
+  }
+
+  #content .isi-content{
+    background-color: #526D82;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 100px;
+  }
+  
+  aside{
+    float: right;
+    padding-left: 25px;
+    margin-top: 10px;
+  }
+  
+  .about-us{
+    background-color: #526D82;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+  }
