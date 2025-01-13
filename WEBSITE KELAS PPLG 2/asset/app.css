@@ -1,139 +1,139 @@
-*,*::before,
-*::after{
+*{
   box-sizing: border-box;
 }
 body {
     font-family: 'Quicksand', sans-serif;
   
-    height: 100vh;;
-    margin: 0 ;
-
-    flex-direction: column;
-    background-color: #425c77;
-  } 
-
-  header.navbar {
-    width: 100%;
-    padding-block: 1rem 1rem ;
-    padding-left: 2rem;
-    margin-inline: auto;
-    display: flex;
-    justify-content: space-between  ;
-    align-items: center;
-    background-color: #526D82;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 9999;
+    margin: 0;
+    padding: 0;
+    background-color: #9fa1a1;
   }
-
-  header.navbar img{
-    width: 80px;
+  
+  h2,
+  h3 {
+    color: #00a2c6;
   }
-
-  header.navbar .nav-list ul{
-      display: flex;
-      padding-right: 5rem;
-      justify-content: center;
-      left: 5px;
-      gap: 5rem 2rem;
-      list-style-type: none;
-    }
-
-      header.navbar .logo-PPLG{
-        margin-top: 1px;
-        display: flex;
-      }
-
-    header.navbar .logo-PPLG p{
-      justify-content: center;
-      margin-bottom: 1px;
-      margin-left: 30px;
-      font-size: 40px;
-      font-weight : bold;
-    }
-
-  header.navbar ul li{
-    margin: 10 50px;
-  }
-
-  header.navbar ul li a{
-    padding: 8px;
-    text-decoration: none;
+  
+  footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+  
+    text-align: center;
     font-weight: bold;
-    font-size: 32px;
-    justify-content: center;
-    border-radius: 9px;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 10px;
+  }
+
+  nav .nama-kelas{
+    color:black;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    padding-top: 20px;
+  }
+  
+  nav .nama-kelas a{
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+      transition: all 0.15s ease-in;
+  }
+
+  nav a:hover{
+    color: wheat;
+  }
+
+  
+  nav li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+
+  nav li:hover{
+    background-color:#00a2c6;
+    border: black 2px solid;
+    border-radius: 10px;
+    transition: all 0.15s ease-in;
+  }
+  
+  nav {
+    background-color: #688187;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin: 10px;
+    position: sticky;
+    padding: 10px;
+    top: 0;
+    border-radius: 0px 0px 10px 10px;
   }
 
 
-  header.navbar ul li a:hover{
-    background-color: white;
-  color: #425c77; 
+  nav img{
+    width: 70px;
+  }
+  
+  main {
+    padding: 20px;
+    overflow: auto;
   }
 
-  #beranda{
+  #content{
     float: left;
     width: 75%;
   }
 
-  main{
-      flex: 1;
-      width: 100%;
-      margin-inline: auto;
-      padding: 2rem 4rem;
-      display: flex;
-      align-items: center;
-  }
-
-  main.content{
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
-  main.content .gambar-content  
-  h3{color: aquamarine;}  
-
-  .gambar-content img{
-    width: 99%;
-    position: relative;
-    margin-left: 50px;
-    border-radius: 15%;
-  }
-
-  mark{
-    background-color: #425c77;
-    color: black;
-    font-size: 24px;
-  }
-
-  #content .isi-content{
-    background-color: #526D82;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 25px;
-    justify-content: center;
-    margin: 50px;
-    margin-left: 100px;
-  }
-  
   aside{
     float: right;
+    width: 25%;
     padding-left: 25px;
-    margin-top: 10px;
+  }
+
+  header{
+    display: inline;
+  }
+
+  article{
+    background-color: #688187;
+  }
+
+  .logo-judul{
+    display: flex;
+    justify-content: center;
   }
   
-  .about-us{
-    background-color: #526D82;
+  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-  
+    
     padding: 20px;
-    margin-left: 20px;
     margin-top: 20px;
-    margin-bottom: 300px;
+  }
+
+  .Gambar-Beranda {
+    width: 40%;
+    max-height: 300px;
+  
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
   }
